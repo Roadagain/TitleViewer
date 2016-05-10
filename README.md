@@ -1,0 +1,2 @@
+# TitleViewer
+長いタイトルを確認するためのChrome拡張機能
