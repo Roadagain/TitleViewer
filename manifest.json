@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "TitleViewer",
+  "version": "0",
+  "default_locale": "jp",
+  "description": "長いタイトルを確認できます",
+  "permissions": [
+    "tabs"
+  ],
+  "author": "Roadagain"
+}
