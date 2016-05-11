@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "TitleViewer",
+  "version": "0.1",
+  "description": "長いタイトルを確認できます",
+  "browser_action": {
+    "default_title": "TitleViewer",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "author": "Roadagain"
+}
