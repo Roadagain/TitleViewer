@@ -1,6 +1,7 @@
 function copyToClipboard(str){
   'use strict';
 
+  // Copy str to clipboard
   var textArea = document.createElement('textarea');
   document.body.appendChild(textArea);
   textArea.value = str;
