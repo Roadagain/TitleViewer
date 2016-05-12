@@ -5,22 +5,36 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <section id="title_section">
-    タイトル
-    <p id="page_title"></p>
-    <button type="button" id="copy_title">コピー</button>
-  </section>
-
-  <section id="url_section">
-    URL
-    <p id="page_url"></p>
-    <button type="button" id="copy_url">コピー</button>
-  </section>
-
-  <hr>
-  <section id="all_section">
-    <button type="button" id="copy_all">全てコピー</button>
-  </section>
+  <table>
+    <tr>
+      <td>タイトル</td>
+    </tr>
+    <tr>
+      <td>
+        <p id="page_title"></p>
+      </td>
+      <td>
+        <button type="button" id="copy_title">コピー</button>
+      </td>
+    </tr>
+    <tr>
+      <td>URL</td>
+    </tr>
+    <tr>
+      <td>
+        <p id="page_url"></p>
+      </td>
+      <td>
+        <button type="button" id="copy_url">コピー</button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="button" id="copy_all">全てコピー</button>
+      </td>
+    </tr>
+  </table>
 
   <script src="popup.js"></script>
 </body>
