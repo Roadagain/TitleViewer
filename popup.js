@@ -18,6 +18,7 @@ window.addEventListener('load', function(){
   var url = document.getElementById('page_url');
   var copyTitle = document.getElementById('copy_title');
   var copyUrl = document.getElementById('copy_url');
+  var copyAll = document.getElementById('copy_all');
 
   // Get tab info
   chrome.tabs.query({ active: true }, function(tabs){
@@ -39,6 +40,11 @@ window.addEventListener('load', function(){
 
       // Copy title to clipboard
       copyToClipboard(tabs[0].url);
+    });
+    copyAll.addEventListener('click', function(){
+      'use strict';
+
+      copyToClipboard(tabs[0].title + ' ' + tabs[0].url);
     });
   });
 });
