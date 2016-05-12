@@ -1,3 +1,14 @@
+function copyToClipboard(str){
+  'use strict';
+
+  var textArea = document.createElement('textarea');
+  document.body.appendChild(textArea);
+  textArea.value = str;
+  textArea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textArea);
+}
+
 window.addEventListener('load', function(){
   'use strict';
 
@@ -20,23 +31,13 @@ window.addEventListener('load', function(){
       'use strict';
 
       // Copy title to clipboard
-      var textArea = document.createElement('textarea');
-      document.body.appendChild(textArea);
-      textArea.value = tabs[0].title;
-      textArea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textArea);
+      copyToClipboard(tabs[0].title);
     });
     copyUrl.addEventListener('click', function(){
       'use strict';
 
       // Copy title to clipboard
-      var textArea = document.createElement('textarea');
-      document.body.appendChild(textArea);
-      textArea.value = tabs[0].url;
-      textArea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textArea);
+      copyToClipboard(tabs[0].url);
     });
   });
 });
