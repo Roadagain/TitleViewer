@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
 
   // Get elements
   var title = document.getElementById('page_title');
-  var copy_title = document.getElementById('copy_title');
+  var copyTitle = document.getElementById('copy_title');
 
   // Get tab info
   chrome.tabs.query({ active: true }, function(tabs){
@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
     title.innerHTML = tabs[0].title;
 
     // Add click listener to copy button
-    copy.addEventListener('click', function(){
+    copyTitle.addEventListener('click', function(){
       'use strict';
 
       // Copy title to clipboard
