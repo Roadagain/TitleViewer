@@ -4,6 +4,10 @@ table {
   white-space: nowrap;
 }
 
+td > p {
+  margin: 0 10px;
+}
+
 td > button {
   float: right;
 }
