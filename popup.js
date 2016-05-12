@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
 
   // Get elements
   var title = document.getElementById('page_title');
+  var url = document.getElementById('page_url');
   var copyTitle = document.getElementById('copy_title');
 
   // Get tab info
@@ -11,6 +12,7 @@ window.addEventListener('load', function(){
 
     // Show title
     title.innerHTML = tabs[0].title;
+    url.innerHTML = tabs[0].url;
 
     // Add click listener to copy button
     copyTitle.addEventListener('click', function(){
