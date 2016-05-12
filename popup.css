@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
-section {
-  margin: 20px 0;
+table {
   white-space: nowrap;
+}
+
+td.name {
+  text-align: right;
+}
+
+td > p {
+  margin: 0 10px;
+}
+
+td > button {
+  float: right;
 }
