@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
 
   // Get elements
   var title = document.getElementById('page_title');
-  var copy = document.getElementById('copy');
+  var copy_title = document.getElementById('copy_title');
 
   // Get tab info
   chrome.tabs.query({ active: true }, function(tabs){
