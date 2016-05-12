@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
   chrome.tabs.query({ active: true }, function(tabs){
     'use strict';
 
-    // Show title
+    // Show title and url
     title.innerHTML = tabs[0].title;
     url.innerHTML = tabs[0].url;
 
